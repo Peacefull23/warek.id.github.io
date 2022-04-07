@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Warek.id</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Amatic SC', sans-serif;
+      }
+      .menu {
+        display: none;
+      }
+      .bgimg {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('style/img/pexels-fauxels-3184180.jpg');
+        min-height: 100%;
+        background-position: center;
+      }
+
+      #text {
+        text-align: center;
+      }
+
+      .img {
+        width: 100%;
+        height: auto;
+      }
+
+      .mybuttonWA {
+        margin: 0;
+        padding-top: 10px;;
+        padding-bottom: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 35px;
+        right: 25px;
+      }
+      .buttonWA {
+        padding: 15px;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+
+      .mybuttonIG {
+        margin-bottom: 40px;
+        margin-right: 10px;
+        padding: 15px;
+        text-align: center;
+        position: fixed;
+        bottom: 35px;
+        right: -15px;
+      }
+
+      .buttonIG {
+        padding: 30px;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+
+      .bg-dark {
+        opacity: 80%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="style/img/logowarek.png" alt="" width="32px" height="32px" class="d-inline-block align-text-center" />
+          Warek.Id
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="n avbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Warek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+  
+  
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <img src="/style/img/slider/pexels-cats-coming-1907228.jpg" alt="">
+    <div class="container">
+      <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Buka Dari Jam 08Am Sampai Dengan 12Pm</span>
+      </div>
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white w3-hide-small" style="font-size:100px">Kunjungi<br>WAREK.ID</span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Kunjungi<br>Warek.id</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Nongkrong Sampai Wareg!!!</a></p>
+      </div>
+    </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s3 tablink w3-hover-red "><p>Makanan</p></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s3 tablink w3-hover-red"><p>Minuman</p></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cemilan');">
+        <div class="w3-col s3 tablink w3-hover-red"><p>Cemilan</p></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s3 tablink w3-hover-red"><p>Pilihan</p></div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>RiceBowl Saos Padang/Lada Hitam</b> <span class="w3-right w3-tag w3-dark-grey w3-round">20 K</span></h1>
+      <p class="w3-text-grey">Nasi + Telur + Mix Vegetables + Nugget + Sosis</p>
+      <hr />
+
+      <h1><b>RiceBowl Warek</b> <span class="w3-tag w3-red w3-round">Best Seller</span><span class="w3-right w3-tag w3-dark-grey w3-round">20 K</span></h1>
+      <p class="w3-text-grey">Nasi + Telur + Nugget + Nugget+Saus Lada Hitam</p>
+      <hr />
+
+      <h1><b>Indomie Goreng</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 K</span></h1>
+      <p class="w3-text-grey">Klasik</p>
+      <hr />
+
+      <h1><b>Indomie Rebus</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 K</span></h1>
+      <p class="w3-text-grey">Ayam Bawang, Kari Ayam, dan Soto</p>
+      <hr />
+
+      <h1><b>Indomie Warek</b> <span class="w3-tag w3-red w3-round">Best Seller</span><span class="w3-right w3-tag w3-dark-grey w3-round">18 K</span></h1>
+      <p class="w3-text-grey">Indomie Double 2 Bungkus</p>
+      <hr />
+
+      <h1><b>Roti Bandung</b> <span class="w3-tag w3-red w3-round">Best Seller</span><span class="w3-right w3-tag w3-Blue w3-round">Single/Double</span></h1>
+      <h1 class="w3-text-grey w3-margin-top">ChocoCrunchy, Blueberry, Keju Susu<span class="w3-right w3-tag w3-margin-top w3-dark-grey w3-round">15 K / 18 K</span>
+      <h1 class="w3-text-grey w3-margin-top">ChocoCrunchy, Blueberry, Keju Susu<span class="w3-right w3-tag w3-margin-top w3-dark-grey w3-round">15 K / 18 K</span>
+      <h1 class="w3-text-grey w3-margin-top">Nuttela Cappucino<span class="w3-right w3-tag w3-margin-top w3-dark-grey w3-round">15 K / 18 K</span>
+      <hr />
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Es Kopi Susu Warek</b> <span class="w3-tag w3-red w3-round">Best Seller</span> <span class="w3-right w3-tag w3-dark-grey w3-round">13 K</span></h1>
+      <hr>
+   
+      <h1><b>Nutrisari All Variant</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+      
+      <h1><b>Milo Cokelat</b> <span class="w3-right w3-tag w3-dark-grey w3-round">8 K</span></h1>
+      <hr>
+
+      <h1><b>White Coffea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>Indocafe</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>GoodDay</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>Red Valvet</b> <span class="w3-tag w3-grey w3-round">Populer</span> <span class="w3-right w3-tag w3-dark-grey w3-round">15 K</span></h1>
+      <hr>
+
+      <h1><b>Matcha</b> <span class="w3-tag w3-grey w3-round">Populer</span> <span class="w3-right w3-tag w3-dark-grey w3-round">15 K</span></h1>
+      <hr>
+
+      <h1><b>Chocolate</b> <span class="w3-tag w3-grey w3-round">Populer</span> <span class="w3-right w3-tag w3-dark-grey w3-round">15 K</span></h1>
+      <hr>
+
+      <h1><b>Mojito Lemon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">15 K</span></h1>
+      <hr>
+
+      <h1><b>Mojito Orange</b> <span class="w3-right w3-tag w3-dark-grey w3-round">15 K</span></h1>
+      <hr>
+
+      <h1><b>Lemon Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>Leci Tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>ExtraJoss/ExtraJoss Susu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K/ 8 K</span></h1>
+      <hr>
+
+      <h1><b>Kopi Susu Panas</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">15 K</span></h1>
+      <hr>
+
+      <h1><b>Jahe Merah / Jahe Susu</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K / 7 K</span></h1>
+      <hr>
+
+      <h1><b>Kapal Api</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">3 K</span></h1>
+      <hr>
+
+      <h1><b>Milo Panas</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>White Coffea</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>Indocafe</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+
+      <h1><b>Energen</b> <span class="w3-tag w3-yellow w3-round">HOT</span> <span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+    </div>
+    
+    <div id="Cemilan" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Warek Platter</b> <span class="w3-tag w3-red w3-round">Best Seller</span><span class="w3-right w3-tag w3-dark-grey w3-round">20 K</span></h1>
+      <p class="w3-text-grey">Kentang + Nugget + Sosis</p>
+      <hr>
+   
+      <h1><b>Kentang Goreng</b> <span class="w3-right w3-tag w3-dark-grey w3-round">12 K</span></h1>
+      <hr>
+      
+      <h1><b>Jasuke</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10 K</span></h1>
+      <hr>
+      
+    </div><br>
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Nasi Putih</b> <span class="w3-tag w3-red w3-round">Biar Warek</span><span class="w3-right w3-tag w3-dark-grey w3-round">5 K</span></h1>
+      <hr>
+   
+      <h1><b>Telur</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3 K</span></h1>
+      <hr>
+      
+      <h1><b>Keju</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3 K</span></h1>
+      <hr>
+      
+      <h1><b>Kornet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3 K</span></h1>
+      <hr>
+
+      <h1><b>Keju/Susu/Meses</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4 K</span></h1>
+    </div><br>
+
+  </div>
+</div>
+
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">Tentang Kita</h1>
+        <p id="text">
+        WAREK.id adalah warkop masa kini yang menyajikan minuman dan makanan ala warkop namun dengan konsep yang kekinian. dengan suasana yang nyaman dan pelayanan yang ramah serta harga yang terjangkau WAREK.id adalah bentuk warkop model baru yang kami harapkan agar berkembang ke seluruh kota di indonesia.
+        </p>
+        <h1><b>Warek.id</b></h1>
+  
+        <h1><b>Jam Buka Edisi Ramadhan</b></h1>
+
+        <div class="w3-row">
+          <div class="w3-col s12">
+            <p>Senin S/d Jum'at 15.00 - 00.00</p>
+            <p>Sabtu & Minggu 15.00 - 01.00</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Maps-->
+    <div class=" w3-padding-64 w3-dark-black w3-xlarge">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">Maps</h1>
+    <iframe style="display: flexbox;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.985319397688!2d106.96880861476933!3d-6.26566049546486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698de8f5e77999%3A0x9edb8b973fab06bd!2sWAREK.ID!5e0!3m2!1sid!2sid!4v1649251579022!5m2!1sid!2sid" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+      
+    <!--Akhir Maps-->
+
+    <!-- Contact -->
+    <div id="contact" class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom: 64px">Kontak</h1>
+        <p>Temukan kami di instagram @Warekkin.id,Hubungi kami di 081318646281</p>
+        <p><span class="w3-tag">FYI!</span> Kami juga menyajikan pesanan  acara besar seperti nikahan,acara keluarga,acara kantor,meeting dan acara besar lainnya..</p>
+        <p class="w3-xxlarge"><strong>Reserve</strong> :</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required name="Name" /></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Berapa Banyak Kursi" required name="People" /></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Tanggal dan Waktu" required name="date" value="2020-11-16T20:00" /></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Pesan Khusus Permintaan" required name="Message" /></p>
+          <p><button class="w3-button w3-light-grey w3-block" type="submit">Kirim Pesan</button></p>
+        </form>
+      </div>
+    </div>
+
+
+      <!--Button sosmed-->
+
+      <div class="mybuttonWA">
+        <a class="buttonWA" href="https://api.whatsapp.com/send?phone=6281318646281&amp;text=Halo%20Admin%20Apa%20Kabar" rel="nofollow" target="_blank"><i class="fa fa-whatsapp"><img width="32px" src="style/img/whatsapp.png" alt=""> </i></a>
+      </div>
+      <div class="mybuttonIG">
+        <a class="buttonIG" href="https://www.instagram.com/warekkin.id/" rel="nofollow"><i><img width="32px" src="style/img/instagram.png" target="" class="fa fa-instagram" alt=""> </i></a>
+      </div>
+      <!--Akhir Button sosmed-->
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+      <p>diBuat oleh WAREK.ID <a href="" target="_blank" class="w3-hover-text-green">w3</a></p>
+    </footer>
+    <!-- /GetButton.io widget -->
+
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName('menu');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablink');
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' w3-red', '');
+        }
+        document.getElementById(menuName).style.display = 'block';
+        evt.currentTarget.firstElementChild.className += ' w3-red';
+      }
+      document.getElementById('myLink').click();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
